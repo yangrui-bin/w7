@@ -1,0 +1,31 @@
+﻿1.使用微信WEB开发者工具进行调试，调试路径必须为英文，切换不能有任何中文目录名
+
+
+2.打开前端目录wxapp文件夹，配置目录下面的app.js
+
+appid:appid
+
+//这里写小程序appid
+
+api: https://shop.syjiaer.xyz/app/ewei_shopv2_api.php?i=3"
+
+//这里写人人商城前端获取数据的api接口
+
+//i后面的值为公众号ID
+（编辑公众号可以查看）
+
+approot: "https:///shop.syjiaer.xyz/addons/ewei_shopv2/",
+
+//这里写人人商城的路径
+    
+
+//这里为空不要动
+  }
+ '
+
+
+然后下载微信开发者工具填如appid（注意appid和app.js还有人人商城应用小程序插件后台端要统一）
+
+在微信开发者工具点上传，进微信公众平台，提交审核，官方审核后即可上架。
+
+
