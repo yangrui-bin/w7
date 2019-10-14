@@ -4,20 +4,32 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
-		"newFeature": true
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.3.0",
-	"appid": "wx23c3913b6e5522ee",
-	"projectname": "1111",
+	"appid": "wxf36fb061e621f4f1",
+	"projectname": "vshop",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
 	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,
