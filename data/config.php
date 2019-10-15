@@ -58,3 +58,9 @@ $config['setting']['memcache']['session'] = 1;
 // --------------------------  CONFIG PROXY  --------------------------- //
 $config['setting']['proxy']['host'] = '';
 $config['setting']['proxy']['auth'] = '';
+
+//$config['setting']['redis']['server'] = '127.0.0.1';
+//$config['setting']['redis']['port'] = 6379;
+//$config['setting']['redis']['pconnect'] = 1;
+//$config['setting']['redis']['timeout'] = 30;
+//$config['setting']['redis']['session'] = 1;
