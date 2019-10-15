@@ -27,17 +27,17 @@ https://download.csdn.net/download/ericjia8/10873347
 
 
 
-##**站内商城**
+## **站内商城**
 后台有个站内商城不知道有什么用，和插件addons中的商城无关
 
-##**路由**
+## **路由**
 路由快速定位
 * m=ewei_shopv2，访问addons/ewei_shopv2下的文件
 * r=goods，访问goods/index.php中的main方法
 * r=goods.detail,访问goods/index.php中的detail方法
 * r=goods.detail.eval,访问goods/detail.php中的eval方法
 
-##**目录**
+## **目录**
 * web 微擎本身后台管理
 	* source 后台管理控制器
 	* themes 后台管理视图
@@ -57,14 +57,15 @@ https://download.csdn.net/download/ericjia8/10873347
 
 * app 前端公众号和小程序API运行时需要的一些公用方法
 * framework 微擎系统通用的工具类和方法
-##**数据库操作**
+
+## **数据库操作**
 
 http://s.w7.cc/index.php?c=wiki&do=view&id=1&simple=&list=173
 
-##**小程序登录**
+## **小程序登录**
 `addons/ewei_shopv2/plugin/app/core/mobile/wxapp.php`
 
-##**关闭微信H5内自动授权登录，当浏览器使用**
+## **关闭微信H5内自动授权登录，当浏览器使用**
 
 /app/common/bootstrap.app.inc.php 159
 ````
@@ -77,7 +78,7 @@ if($controller != 'utility') {
 $_W['platform'] = null;
 ````
 
-##**调试**
+## **调试**
 - 输出执行过的SQL
 `pdo_debug()` 
 
@@ -93,7 +94,7 @@ addons/ewei_shopv2/defines.php
 define('EWEI_SHOPV2_DEBUG', true);
 ````
 
-##**什么时侯弹出用户授权**
+## **什么时侯弹出用户授权**
 ````
 <view class="model" wx:if="{{modelShow}}">
     <include src="/pages/index/openauth.wxml"></include>
@@ -119,7 +120,7 @@ define('EWEI_SHOPV2_DEBUG', true);
 ````
 必须点击`<button open-type="getUserInfo"/>`后才会弹出小程序授权页，授权是指授权用户可以获取哪些信息项，如用户信息，地理位置，发票，如同意用户获取用户信息，只是说明用户可获取用户信息的权限了，但并未真正立即去获取用户信息，真正获取用户信息需要由`wx.getUserInfo`来完成。
 
-##**小程序页面授权登录顺序**
+## **小程序页面授权登录顺序**
 - onLaunch -> wx.login -> 获取临时登录凭证code -> 用code异步请求php后端wxapp/login
 > 后端php会请求微信code2Session接口，获取openid,session_key，unionid
 > unionid在符合下发条件时才会返回，所以不要获取这里返回的unionid
@@ -131,7 +132,7 @@ define('EWEI_SHOPV2_DEBUG', true);
 > 当初次加载或用户拒绝过授权并且授权缓存还存在时，还是会从wx.login开始执行，只不过wx.getUserInfo返回失败。
 
 
-##**关闭后台登录密码验证**
+## **关闭后台登录密码验证**
 
 密码要是忘了
 `/framework/model/user.mod.php` 192行 注释掉`return false;`
@@ -142,7 +143,7 @@ define('EWEI_SHOPV2_DEBUG', true);
 
 ````
 
-##**微擎公众号非静默授权**
+## **微擎公众号非静默授权**
 获取code
 ````
 app/source/auth/oauth.ctrl.php
@@ -184,6 +185,6 @@ $userinfo = $oauth_account->getOauthUserInfo($oauth['access_token'], $oauth['ope
 至于向ewei_shop_member插入用户是在访问ewei_shop模块时，由
 `/addons/ewei_shopv2/core/model/member.php` 中的`checkMember()`完成插入的(有返回没有则插入)
 
-##**小程序授权登录**
+## **小程序授权登录**
 ````/addons/ewei_shopv2/plugin/app/core/mobile/wxapp.php````
 小程序授权登录完全在上面wxapp.php里面完成的，不会执行auth.ctrl.php，也不会向mc_members 和 mc_mapping_fans插入用户。
