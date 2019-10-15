@@ -62,6 +62,8 @@ https://download.csdn.net/download/ericjia8/10873347
 
 ## **数据库操作**
 
+framework/function/pdo.func.php
+
 http://s.w7.cc/index.php?c=wiki&do=view&id=1&simple=&list=173
 
 ## **小程序登录**
