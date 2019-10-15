@@ -58,6 +58,8 @@ https://download.csdn.net/download/ericjia8/10873347
 * app 前端公众号和小程序API运行时需要的一些公用方法
 * framework 微擎系统通用的工具类和方法
 
+目录结构 http://s.w7.cc/index.php?c=wiki&do=view&id=1&simple=&list=15
+
 ## **数据库操作**
 
 http://s.w7.cc/index.php?c=wiki&do=view&id=1&simple=&list=173
