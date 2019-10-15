@@ -165,7 +165,7 @@ App({
         flag: !1
     },
     globalData: {
-      appid: "wxf36fb061e621f4f1",
+      appid: "wxf36fb061e621f4fx",
       api: "http://258sd8.natappfree.cc/app/ewei_shopv2_api.php?i=3",
       approot: "http://258sd8.natappfree.cc/addons/ewei_shopv2/",
         userInfo: null
